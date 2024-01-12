@@ -15,11 +15,57 @@
         height: 200px;
         border: 2px solid black;
         margin-left: 200px;
-        width: auto;
+        width: fit-content;
+      }
+      .gallery {
+        display: flex;
+      }
+      .img-box {
+        flex-basis: 25%;
+        width: 25%;
+      }
+      .myImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     </style>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum asperiores
+      accusamus minima ad cumque quo modi unde sapiente voluptas, dolor vel
+      error veritatis praesentium voluptates a ipsa quidem dignissimos odit!
+    </div>
+    <div class="gallery">
+      <div class="img-box" style="order: 4">
+        <img
+          class="myImg"
+          src="https://images.immediate.co.uk/production/volatile/sites/3/2023/08/Best-young-players-823ab93.jpg?quality=90&webp=true&resize=1000,667"
+          alt=""
+        />
+      </div>
+      <div class="img-box" style="order: 3">
+        <img
+          class="myImg"
+          src="https://images.immediate.co.uk/production/volatile/sites/3/2023/02/Garnacho-fb59139.jpg?quality=90&webp=true&fit=975,649"
+          alt=""
+        />
+      </div>
+      <div class="img-box" style="order: 2">
+        <img
+          class="myImg"
+          src="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/12/9/1355055907038/e0428d50-868a-4840-af87-b94579a94da4-460.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="img-box" style="order: 1">
+        <img
+          class="myImg"
+          src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt3d7826f437cbd2c4/62f9a895caf14d10894ddc4e/CR_Messi.jpg"
+          alt=""
+        />
+      </div>
+    </div>
   </body>
 </html>
